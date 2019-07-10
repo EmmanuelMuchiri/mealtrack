@@ -5,17 +5,19 @@ import { AppComponent } from './app.component';
 import { MealTrackerComponent } from './meal-tracker/meal-tracker.component';
 import { MealDetailsComponent } from './meal-details/meal-details.component';
 import { MealFormComponent } from './meal-form/meal-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MealTrackerComponent,
     MealDetailsComponent,
-    MealFormComponent
+    MealFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
