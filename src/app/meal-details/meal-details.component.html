@@ -1,2 +1,6 @@
 <p>Meal Details Will be displayed here</p>
-<p>{{Meals.name}}</p>
+<div class="col-md-6">
+  <div *ngFor='let meal of meals'>
+      <li>{{meal.id+" "+meal.name}}</li>
+  </div>
+</div>
