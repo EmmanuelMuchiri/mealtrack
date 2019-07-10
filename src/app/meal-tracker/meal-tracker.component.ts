@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meals } from '../meals';
+// import { Meals } from '../meals';
 @Component({
   selector: 'app-meal-tracker',
   templateUrl: './meal-tracker.component.html',
