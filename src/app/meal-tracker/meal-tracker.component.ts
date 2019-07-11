@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Mealss } from '../mealss';
-import { Meals } from '../meals';
+// import { Meals } from '../meals';
 
 @Component({
   selector: 'app-meal-tracker',
@@ -26,11 +26,8 @@ export class MealTrackerComponent implements OnInit {
     }
 
   }
-  editMeal(index) {
+  editMeal(meal) {
     alert("I am working");
-    this.meal[index].editMeals = !this.meal[index].editMeals;
-    // toggleDetails(index){
-    // this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
   constructor() { }
