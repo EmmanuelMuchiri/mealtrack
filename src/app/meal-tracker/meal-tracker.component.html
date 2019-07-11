@@ -4,10 +4,10 @@
   <div class="row">
     <div class="col-md-4">
       <div *ngFor='let meal of meals;let i=index'>
-        <ul>
+        <!-- <ul>
           <li>{{meal.id+" "+"Meal Name : "+" "+meal.name+" : "+meal.details+" : "+"Calories "+meal.calories}}</li>
-        </ul>
-        <button type="submit" (click)=''name="button" class="btn btn-outline-success">Edit Meal</button>
+        </ul> -->
+        <button type="submit"name="button" class="btn btn-outline-success">Edit Meal</button>
         <button type="submit" (click)='deleteMeal(true)' name="button" class="btn btn-outline-danger">Delete Meal</button>
       </div>
     </div>
