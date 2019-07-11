@@ -26,8 +26,10 @@ export class MealTrackerComponent implements OnInit {
     }
 
   }
-  editMeal(isCompleted,index){
-    
+  editMeal(index) {
+    alert("I am working");
+    // this.meals editMeals[index] = !
+
   }
   constructor() { }
 
