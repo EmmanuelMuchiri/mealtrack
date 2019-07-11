@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Mealss } from '../mealss';
 // import { Meals } from '../meals';
 
@@ -8,7 +8,7 @@ import { Mealss } from '../mealss';
   styleUrls: ['./meal-tracker.component.css']
 })
 export class MealTrackerComponent implements OnInit {
-  @Input() meal: Meals;
+  // @Input() meal: Meals;
   @Output() isCompleted = new EventEmitter<boolean>();
 
   meals = Mealss;
