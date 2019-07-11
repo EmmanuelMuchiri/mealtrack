@@ -1,17 +1,23 @@
 <div class="container-fluid">
-  <h2 class="text-center">Enter The Meal You have eaten</h2>
+  <h2 class="text-center">MEAL TRACKER</h2>
   <hr>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div *ngFor='let meal of meals;let i=index'>
         <ul>
           <li>{{meal.id+" "+"Meal Name : "+" "+meal.name+" : "+meal.details+" : "+"Calories "+meal.calories}}</li>
         </ul>
-        <button type="submit" name="button" class="btn btn-success">Edit Meal</button>
-        <button type="submit" (click)='deleteMeal(true)' name="button" class="btn btn-danger">Delete Meal</button>
+        <button type="submit" name="button" class="btn btn-outline-success">Edit Meal</button>
+        <button type="submit" (click)='deleteMeal(true)' name="button" class="btn btn-outline-danger">Delete Meal</button>
       </div>
     </div>
-    <div class="col-md-6">
+    <div *ngIf='meals.editMeals'>
+      <div class="col-md-4">
+        <app-meal-details></app-meal-details>
+      </div>
+    </div>
+
+    <div class="col-md-4">
       <app-meal-form (addMeal)="addNewMeal($event)"></app-meal-form>
     </div>
   </div>

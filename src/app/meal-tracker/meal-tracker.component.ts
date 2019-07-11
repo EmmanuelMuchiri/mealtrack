@@ -26,6 +26,9 @@ export class MealTrackerComponent implements OnInit {
     }
 
   }
+  editMeal(isCompleted,index){
+    
+  }
   constructor() { }
 
   ngOnInit() {
