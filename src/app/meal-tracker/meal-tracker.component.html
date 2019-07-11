@@ -7,15 +7,15 @@
         <ul>
           <li>{{meal.id+" "+"Meal Name : "+" "+meal.name+" : "+meal.details+" : "+"Calories "+meal.calories}}</li>
         </ul>
-        <button type="submit" (click)='editMeal(i)'name="button" class="btn btn-outline-success">Edit Meal</button>
+        <button type="submit" (click)='meal.editMeals = true;'name="button" class="btn btn-outline-success">Edit Meal</button>
         <button type="submit" (click)='deleteMeal(true)' name="button" class="btn btn-outline-danger">Delete Meal</button>
       </div>
     </div>
-    <!-- <div *ngIf='meals.edit'> -->
+    <div *ngIf='meals.edit'>
       <div class="col-md-4">
         <app-meal-details></app-meal-details>
       </div>
-    <!-- </div> -->
+    </div>
 
     <div class="col-md-4">
       <app-meal-form (addMeal)="addNewMeal($event)"></app-meal-form>

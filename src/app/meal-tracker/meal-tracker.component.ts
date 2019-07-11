@@ -28,9 +28,11 @@ export class MealTrackerComponent implements OnInit {
   }
   editMeal(index) {
     alert("I am working");
-    // this.meals editMeals[index] = !
-
+    this.meal[index].editMeals = !this.meal[index].editMeals;
+    // toggleDetails(index){
+    // this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+
   constructor() { }
 
   ngOnInit() {
